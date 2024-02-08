@@ -32,12 +32,16 @@ const AnimatedSection = ({ children }) => {
 function App() {
   return (
     <Router>
-        <AnimatedSection>
-          <Nav />
-          <Home />
-          <About />
-          <Contact />
-        </AnimatedSection>
+      <AnimatedSection>
+        <div className="w-full h-auto">
+          <div className='max-w-screen-2xl overflow-hidden'>
+            <Nav />
+            <Home/>
+            <About/>
+            <Contact/>
+          </div>
+        </div>
+      </AnimatedSection>
     </Router>
   );
 }

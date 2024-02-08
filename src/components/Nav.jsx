@@ -9,7 +9,7 @@ const Nav = () => {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex flex-1 justify-between w-full shadow-lg z-40 p-4">
+        <div className="flex justify-between w-full shadow-lg z-40 px-4">
             <div className="items-center cursor-pointer">
                 {/* Apply max width to the logo */}
                 <img src={logo} alt='logo' className='max-w-[200px]' />
@@ -30,7 +30,7 @@ const Nav = () => {
                     <WhatsAppButton />
                 </div>
             </div>
-            <div onClick={() => setNav(!nav)} className='cursor-pointer p-1 z-10 flex text-black md:hidden'>
+            <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 pt-2 z-10 text-black md:hidden'>
                 {nav ? <FaTimes size={25} className=' text-black' /> : <FaBars size={25} className='text-black' />}
 
                 {/* Mobile Menu */}

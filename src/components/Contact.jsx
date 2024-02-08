@@ -11,8 +11,8 @@ const Contact = () => {
         <div id='/contacts' className="bg-blue text-white">
             <div className="max-w-screen-xl py-8">
                 <div className="grid grid-cols-1 md:grid-cols-3">
-                    <div className=" flex flex-col items-start justify-center">
-                        <img src={logo} alt="Logo"className='w-[75%]' />
+                    <div className=" flex flex-col items-center md:items-start justify-center">
+                        <img src={logo} alt="Logo"className=' w-auto md:w-[75%]' />
                     </div>
                     <div className="flex flex-col justify-start ml-16 gap-2">
                         <h5 className='text-center font-medium underline text-2xl py-1'>Contacts</h5>
