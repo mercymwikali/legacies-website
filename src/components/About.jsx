@@ -1,73 +1,106 @@
 import React from 'react'
 import { ImTarget } from "react-icons/im";
-import { FaRegLightbulb,FaRegHandshake  } from "react-icons/fa";
+import { FaRegLightbulb, FaRegHandshake } from "react-icons/fa";
+import { Improvement, customerFocus, solo, teamwork } from '../assets/images';
 
 const About = () => {
     return (
-        <div id='/about-us' className=''>
-            <div className='max-w-screen-xl mx-auto text-center bg-red opacity-75 text-white  '>
-                <div className="text-wrap">
-                    <p className="text-5xl pt-3 capitalize font-extrabold underline text-wrap">
-                        about us.
+        <section id='/about-us' className=''>
+            <div className=' mx-auto text-center bg-slate-200'>
+                <div className="py-4 max-w-5xl mx-auto tracking-normal">
+                    <p className="text-4xl px-3 md:px-0 pt-3 capitalize font-extrabold text-red text-wrap">
+                        Delivering Excellence <span className='text-blue'>as Your Premium Business</span> Solutions Partner.
                     </p>
                 </div>
-                <div className="my-3 py-4 px-4 md:px-4 ">
-                    <p className="py-4 max-w-2xl mx-auto">
-                        At Legacies Systems, we are dedicated to providing specialized software development, customization, IT consultancy services, and training. Our commitment is rooted in building tailored systems that perfectly align with the unique size, budget, and needs of our clients. We take pride in our technical expertise, ensuring the timely delivery of customized solutions that empower our clients.                    </p>
-                    <p className="py-4 max-w-2xl mx-auto">
-                        Moreover, here at Legacies Systems, we recognize that success is achieved through continuous investment in cutting-edge technology and an unwavering commitment to core values and best practices. Our growth, scope, and influence are driven by a singular purpose: delivering dynamic IT solutions to our esteemed customers. We collaborate closely with you to understand your distinctive vision and translate that vision into action through an exceptional customer experience.                    </p>
+                <div className="py-4 px-4 md:px-4">
+                    <p className="max-w-4xl mx-auto">
+                        Legacies Systems Solutions (LSS) is a distinguished integrated Enterprise Solution provider, offering comprehensive solutions designed to enhance the functions and processes of organizations across various sectors. Our solutions are crafted to boost efficiency and service delivery by automating processes and enhancing accountability.
+                    </p>
+                    <p className="py-4 max-w-4xl mx-auto">
+                        At Legacies Systems, our commitment revolves around delivering specialized software development, customization, IT consultancy services, and training. We are devoted to constructing bespoke systems that precisely align with the unique size, budget, and requirements of our clients. Our pride lies in the technical expertise that ensures the timely delivery of customized solutions, empowering our clients.
+                    </p>
+                </div>
+            </div>
+            <div className="max-w-screen-xl my-4 px-4 md:px-0 mx-auto py-8 ">
+                <div className="max-w-screen-3xl mx-auto text py-4 my-3">
+                    <p className='text-2xl text-center capitalize font-bold md:text-4xl text-blue'>Mission, Vission<span className='text-red'> & Commitment.</span></p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+                    <div className="card">
+                        <div className="p-5 flex flex-col">
+                            <div className="rounded-xl overflow-hidden mx-auto">
+                                <ImTarget size={36}  className='text-blue' />
+                            </div>
+                            <h5 className='text-2xl md:text-medium text-center font-medium mt-3'>Our Mission</h5>
+                            <p className='text-slate-500 text-normal mt-3'>LSS is an IT company with a vision to create an impact through our dedicated team of professionals who prioritize customer value, fulfill our commitments, and ensure client satisfaction.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="p-5 flex flex-col">
+                            <div className="rounded-xl overflow-hidden mx-auto">
+                                <FaRegLightbulb size={36} className='text-blue' />
+                            </div>
+                            <h5 className='text-2xl md:text-medium  text-center font-medium mt-3'>Our Vission</h5>
+                            <p className='text-slate-500 text-normal mt-3'>Our aim is to emerge as a regional leader in innovating and developing top-tier enterprise software solutions.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="p-5 flex flex-col">
+                            <div className="rounded-xl overflow-hidden mx-auto">
+                                <FaRegHandshake size={36} className='text-blue'  />
+                            </div>
+                            <h5 className='text-2xl md:text-medium text-center font-medium mt-3'>Our Commitment</h5>
+                            <p className='text-slate-500 text-normal mt-3'>We are committed to ensuring the successful implementation of quality projects, providing essential support to our clients, and upholding the highest standards in all aspects of our work.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="max-w-screen-xl px-4 md:px-0 mx-auto py-8 ">
-                <div className="grid grid-cols-1 md:grid-cols-3 ">
-                    <div className="card">
-                        <div className="p-5 flex flex-col">
-                            <div className="rounded-xl overflow-hidden mx-auto">
-                                <ImTarget size={36} />
-                            </div>
-                            <h5 className='text-2xl md:text-medium text-center font-medium mt-3'>Our Mission</h5>
-                            <p className='text-slate-500 text-normal mt-3'>LSS is an IT company
-                                with the vision statement
-                                to make a difference
-                                through our people, a
-                                team of dedicated
-                                professionals, who value
-                                our customers, deliver
-                                on our promises and
-                                ensure the client is
-                                satisfied.</p>
+                <div className="max-w-screen-3xl mx-auto text py-4 my-3">
+                    <p className='text-2xl text-center capitalize font-bold md:text-4xl text-blue'>legacies systems solution's <span className='text-red'>core values.</span></p>
+                    <p className='text-slate-500 font-normal text-center mt-3'>Here at Legacies we think big and have hands in all leading technology platforms to provide you with a wide range of services.</p>
+                </div>
+                <div className="grid grid-cols-2  gap-8 ">
+                    <div className="card border-b-4 border-blue p-4 flex flex-col md:flex-row gap-x-2 cursor-pointer">
+                        <div className="w-full md:w-1/2 ">
+                            <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>TeamWork </h5>
+                            <p className='text-slate-500 py-3 '>We encourage collaboration and the sharing of best ideas while also upholding individual accountability within our organization.</p>
+                        </div>
+                        <div className="w-full md:w-1/2 overflow-hidden">
+                            <img src={teamwork} alt='teamwork' className='max-w-full md:max-w-[230px]' />
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="p-5 flex flex-col">
-                            <div className="rounded-xl overflow-hidden mx-auto">
-                                <FaRegLightbulb size={36} />
-                            </div>
-                            <h5 className='text-2xl md:text-3xl text-center font-medium mt-3'>Our Vission</h5>
-                            <p className='text-slate-500 text-normal mt-3'>To become regional
-                                leader in the innovation
-                                and development of
-                                world-class enterprise
-                                software solutions.</p>
+                    <div className="card border-b-4 border-blue p-5 flex flex-col md:flex-row gap-5 cursor-pointer">
+                        <div className="w-full md:w-1/2 ">
+                            <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>Skill Enhancement</h5>
+                            <p className='text-slate-500 py-3 '>We consistently seek innovative solutions and strive for improvement, viewing change as a chance for growth and advancement.</p>
+                        </div>
+                        <div className="w-full md:w-1/2 overflow-hidden">
+                            <img src={solo} alt='skills' className='max-w-full md:max-w-[200px]' />
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="p-5 flex flex-col">
-                            <div className="rounded-xl overflow-hidden mx-auto">
-                                <FaRegHandshake size={36} />
-                            </div>
-                            <h5 className='text-2xl md:text-3xl text-center font-medium mt-3'>Our Values</h5>
-                            <p className='text-slate-500 text-lg text-justify mt-3'>Quality projects
-                                implementation
-                                Support to our clients is
-                                key
-                                Having High Standards.</p>
+                    <div className="card border-b-4 border-blue p-5 flex flex-col md:flex-row gap-5 cursor-pointer">
+                        <div className="w-full md:w-1/2 ">
+                            <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>Customer Satisfaction</h5>
+                            <p className='text-slate-500 py-3 '>Our customers hold the utmost significance in our business and are the driving force behind our success.</p>
+                        </div>
+                        <div className="w-full md:w-1/2 overflow-hidden">
+                            <img src={customerFocus} alt='customer' className='max-w-full md:max-w-[200px]' />
                         </div>
                     </div>
+                    <div className="card border-b-4 border-blue p-5 flex flex-col md:flex-row gap-5 cursor-pointer">
+                        <div className="w-full md:w-1/2 ">
+                            <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>Work Ethic</h5>
+                            <p className='text-slate-500 py-3 '>We uphold honesty in every interaction, building our reputation through a commitment to the highest ethical standards.</p>
+                        </div>
+                        <div className="w-full md:w-1/2 overflow-hidden">
+                            <img src={Improvement} alt='self-Improvement' className='max-w-full md:max-w-[200px]' />
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-        </div>
+        </section>
     )
 }
 

@@ -9,7 +9,7 @@ const Nav = () => {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex justify-between w-full shadow-lg z-40 px-4">
+        <div className="flex justify-between w-full shadow-lg z-40 p-4">
             <div className="items-center cursor-pointer">
                 {/* Apply max width to the logo */}
                 <img src={logo} alt='logo' className='max-w-[200px]' />

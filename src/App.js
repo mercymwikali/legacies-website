@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Services from './components/Services';
 
 const AnimatedSection = ({ children }) => {
   const { ref, inView } = useInView();
@@ -38,6 +39,7 @@ function App() {
             <Nav />
             <Home/>
             <About/>
+            <Services/>
             <Contact/>
           </div>
         </div>
