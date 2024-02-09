@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div id="/" className="md:h-screen mt-0">
             <div className="flex flex-col md:flex-row justify-between">
-                <div className='px-8 md:pr-0 md:pl-16 flex flex-col pt-16'>
+                <div className='px-2 md:pr-0 md:pl-16 flex flex-col pt-16'>
                     <p className='uppercase font-bold text-red text-4xl leading-snug'>Legacies Systems <span className='text-blue'>& Software Solutions for All</span> Business Sectors.</p>
                     <p className='text-slate-700 leading-8 py-4'>Embark on a transformative journey with our comprehensive system consultancy and implementation services. From envisioning the design to seamless deployment, we cater to your business needs. Join us to create tailored solutions for lasting success. Your success story begins with us!</p>
 

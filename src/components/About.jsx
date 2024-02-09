@@ -60,41 +60,41 @@ const About = () => {
                     <p className='text-2xl text-center capitalize font-bold md:text-4xl text-blue'>legacies systems solution's <span className='text-red'>core values.</span></p>
                     <p className='text-slate-500 font-normal text-center mt-3'>Here at Legacies we think big and have hands in all leading technology platforms to provide you with a wide range of services.</p>
                 </div>
-                <div className="grid grid-cols-2  gap-8 ">
-                    <div className="card border-b-4 border-blue p-4 flex flex-col md:flex-row gap-x-2 cursor-pointer">
-                        <div className="w-full md:w-1/2 ">
+                <div className="grid grid-cols-1 md:grid-cols-2  gap-8 ">
+                <div className="card border-b-4 border-blue p-5 flex  gap-5 cursor-pointer">
+                <div className="md:w-1/2 ">
                             <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>TeamWork </h5>
                             <p className='text-slate-500 py-3 '>We encourage collaboration and the sharing of best ideas while also upholding individual accountability within our organization.</p>
                         </div>
-                        <div className="w-full md:w-1/2 overflow-hidden">
-                            <img src={teamwork} alt='teamwork' className='max-w-full md:max-w-[230px]' />
+                        <div className="md:w-1/2 overflow-hidden">
+                            <img src={teamwork} alt='teamwork'className='w-[230px] md:max-w-[230px]' />
                         </div>
                     </div>
-                    <div className="card border-b-4 border-blue p-5 flex flex-col md:flex-row gap-5 cursor-pointer">
-                        <div className="w-full md:w-1/2 ">
+                    <div className="card border-b-4 border-blue p-5 flex  gap-5 cursor-pointer">
+                        <div className="md:w-1/2 ">
                             <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>Skill Enhancement</h5>
                             <p className='text-slate-500 py-3 '>We consistently seek innovative solutions and strive for improvement, viewing change as a chance for growth and advancement.</p>
                         </div>
-                        <div className="w-full md:w-1/2 overflow-hidden">
-                            <img src={solo} alt='skills' className='max-w-full md:max-w-[200px]' />
+                        <div className="md:w-1/2 overflow-hidden">
+                            <img src={solo} alt='skills' className='w-[200px] md:max-w-[200px]' />
                         </div>
                     </div>
-                    <div className="card border-b-4 border-blue p-5 flex flex-col md:flex-row gap-5 cursor-pointer">
-                        <div className="w-full md:w-1/2 ">
+                    <div className="card border-b-4 border-blue p-5 flex  gap-5 cursor-pointer">
+                        <div className="md:w-1/2 ">
                             <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>Customer Satisfaction</h5>
                             <p className='text-slate-500 py-3 '>Our customers hold the utmost significance in our business and are the driving force behind our success.</p>
                         </div>
-                        <div className="w-full md:w-1/2 overflow-hidden">
-                            <img src={customerFocus} alt='customer' className='max-w-full md:max-w-[200px]' />
+                        <div className="md:w-1/2 overflow-hidden">
+                            <img src={customerFocus} alt='customer' className='w-[200px] md:max-w-[200px]' />
                         </div>
                     </div>
-                    <div className="card border-b-4 border-blue p-5 flex flex-col md:flex-row gap-5 cursor-pointer">
-                        <div className="w-full md:w-1/2 ">
+                    <div className="card border-b-4 border-blue p-5 flex  gap-5 cursor-pointer">
+                        <div className="md:w-1/2 ">
                             <h5 className='text-2xl md:text-lg font-semibold underline text-blue py-3'>Work Ethic</h5>
                             <p className='text-slate-500 py-3 '>We uphold honesty in every interaction, building our reputation through a commitment to the highest ethical standards.</p>
                         </div>
-                        <div className="w-full md:w-1/2 overflow-hidden">
-                            <img src={Improvement} alt='self-Improvement' className='max-w-full md:max-w-[200px]' />
+                        <div className="md:w-1/2 overflow-hidden">
+                            <img src={Improvement} alt='self-Improvement' className='w-[200px] md:max-w-[200px]' />
                         </div>
                     </div>
 
