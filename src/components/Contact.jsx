@@ -15,7 +15,7 @@ const Contact = () => {
                         <img src={logo} alt="Logo"className=' max-w-[250px]' />
                     </div>
                     <div className="flex flex-col justify-start ml-16 gap-2 cursor-pointer">
-                        <h5 className='text-center font-medium underline text-2xl py-1'>Contacts</h5>
+                        <h5 className='text-center font-bold text-2xl py-1'>Contacts</h5>
                         <div className="flex items-center space-x-4">
                             <MdEmail size={25} />
                             <div className="rounded-xl overflow-hidden">
@@ -41,7 +41,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="pb-2">
-                        <h5 className='text-center font-medium underline text-2xl py-1'>Our Company</h5>
+                        <h5 className='text-center font-bold text-2xl py-1'>Our Company</h5>
                         <div className='flex ml-16 text-gray-300 w-full'>
                             <ul className='flex flex-col text-start gap-y-4'>
                                 {navLinksdata.map(({ _id, label, key }) => (

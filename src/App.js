@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Services from './components/Services';
+import Products from './components/Products';
 
 const AnimatedSection = ({ children }) => {
   const { ref, inView } = useInView();
@@ -34,12 +35,13 @@ function App() {
   return (
     <Router>
       <AnimatedSection>
-        <div className="w-full h-auto">
+        <div className="w-full h-auto font-sans">
           <div className='max-w-screen-2xl overflow-hidden'>
             <Nav />
             <Home/>
             <About/>
             <Services/>
+            <Products/>
             <Contact/>
           </div>
         </div>
