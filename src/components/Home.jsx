@@ -4,7 +4,7 @@ import { HeroImage } from '../assets/images';
 
 const Home = () => {
     return (
-        <div id="/" className="md:h-screen mt-0 pt-28">
+        <div id="/" className="md:h-screen mt-0 pt-28 md:pt-16">
             <div className="flex flex-col md:flex-row ">
                 <div className='px-4 md:pr-0 md:pl-16  md:pt-14'>
                     <p className='uppercase font-bold text-red text-center md:text-start text-4xl leading-snug'>Legacies Systems <span className='text-blue'>& Software Solutions for All</span> Business Sectors.</p>
