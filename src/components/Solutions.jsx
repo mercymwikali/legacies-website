@@ -16,7 +16,7 @@ const Solutions = () => {
     ];
 
     return (
-        <section className=" flex flex-col md:flex-row p-8  bg-slate-100 mx-auto">
+        <section id='/solutions' className=" flex flex-col md:flex-row p-8  bg-slate-100 mx-auto">
             <div className="w-full md:w-1/3 text-center md:text-start justify-center items-center md:my-12 px-3">
                 <h5 className="text-3xl font-bold text-blue my-4">INDUSTRIES & SOLUTIONS</h5>
                 <p className="text-slate-500 text-normal pt-3 leading-relaxed">We are a leading provider of premium business solutions. Our ethos revolves around meeting our clients' requirements through the delivery of tailored solutions that align with cutting-edge technology and adhere to the highest IT standards.</p>
