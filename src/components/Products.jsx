@@ -1,6 +1,7 @@
 import React from 'react';
 import { Businesscentral, CRM, POS, azure, eMoney, ecommerce, mobileapps, nav, odoo, powerBI, sharepoint, webportals } from '../assets/images';
-
+import { Link } from 'react-scroll'; // Import Link from react-scroll
+import Stats from './Stats';
 const productData = [
     { image: nav, title: 'Microsoft Dynamics Nav', text: 'Experience streamlined business operations with Microsoft Dynamics Nav, providing comprehensive navigation and project management solutions.' },
     { image: sharepoint, title: 'Microsoft SharePoint', text: 'Boost collaboration and document management within your organization using Microsoft SharePoint, the ultimate platform for seamless teamwork and productivity.' },
@@ -20,13 +21,12 @@ const productData = [
 
 const Products = () => {
     return (
-        <section id='/products'>
-            <div className="max-w-screen-xl px-4 mb-4 mx-auto">
-                <div className="max-w-screen-3xl mx-auto py-4 my-3">
+        <section id='/products' className="max-w-screen-3xl px-4 md:px-8 mb-4 mx-auto">
+                <div className=" mx-auto py-4 my-3">
                     <p className='text-lg font-light text-red text-center  md:text-start pb-2'>Products & Systems</p>
                     <p className='text-3xl text-center  md:text-start capitalize font-bold md:text-4xl text-blue'>Our Business <span className='text-red'>Products</span></p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {productData.map((product, index) => (
                         <div key={index} className="card">
                             <div className="p-5 flex flex-col">
@@ -41,7 +41,16 @@ const Products = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+                <div className="max-w-screen-3xl text-center py-4 my-3">
+                    <h2 className='captalize text-blue leading-normal text-4xl text-center py-4 font-bold '>Let us take care <span className='text-red'> of all Your Software</span>  Business needs
+                    </h2>
+                    <Link to="/contacts" smooth duration={500} className="btn-outline hover:cursor-pointer duration-150 ease-linear hover:bg-red">
+                        <p className='px-2 tracking-wide'>Contact Us </p>
+                    </Link>
+                </div>
+                <div className=" my-12 md:pl-36 text-center">
+                        <Stats className='py-16'/>
+                </div>
         </section>
     );
 }

@@ -7,7 +7,7 @@ const Home = () => {
         <div id="/" className="md:h-screen mt-0 pt-8 md:pt-0">
             <div className="flex flex-col md:flex-row ">
                 <div className='px-4 md:pr-0 md:pl-16  md:pt-14'>
-                    <p className='uppercase font-bold text-red text-center  md:text-start text-4xl leading-snug'>Legacies Systems <span className='text-blue'>& Software Solutions for All</span> Business Sectors.</p>
+                    <p className='uppercase font-bold text-red text-center md:text-start text-4xl leading-snug'>Legacies Systems <span className='text-blue'>& Software Solutions for All</span> Business Sectors.</p>
                     <p className='text-slate-700 leading-8 py-4 text-center  md:text-start font-medium text-lg'>Embark on a transformative journey with our comprehensive system consultancy and implementation services. From envisioning the design to seamless deployment, we cater to your business needs. Join us to create tailored solutions for lasting success. Your success story begins with us!</p>
 
                     {/* Use Link instead of Button */}

@@ -2,19 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .card{
-    @apply rounded-xl shadow-lg
+@layer components {
+  .card {
+    @apply rounded-xl shadow-lg;
   }
 }
 
-@tailwind base;
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  scroll-behaviour:'smooth';
+.work-card {
+  margin: 10px;
+  padding: 15px 15px;
+  max-height: 170px;
+  background-color: #c02321;
+  color: #fff;
+  text-align: center;
+  border-radius: 40px 8px 40px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align content vertically */
 }
 
+.work-card p {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 5px 0 0;
+  padding: 12px 0;
+}
+
+.icon-bg {
+  height: 32px;
+  width: 32px;
+  margin: 0 auto; /* Center the icon horizontally */
+  text-align: center;
+}
+
+.btn-outline {
+  /* border: 2px solid #00387b; */
+  color: #fff;
+  display: inline-block;
+  padding: 0 32px;
+  font-family: Poppins,sans-serif;
+  font-size: 16px;
+  background: #00387b;
+  -webkit-box-shadow: 0 10px 15px 0 rgba(3,35,68,.1);
+  box-shadow: 0 10px 15px 0 rgba(3,35,68,.1);
+  line-height: 52px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+.stats-card {
+  margin: 10px;
+  padding: 15px 15px;
+  max-height: 170px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  border-radius: 40px 8px 40px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  border:2px solid  #00387b
+}
+
+
+
+span.num {
+  color: #c02321;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+ 
+span.text {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+  font-size: 1em;
+  padding: 0.7em 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Added quotes around font name */
+  scroll-behavior: smooth; /* Corrected spelling of scroll behavior */
+}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -26,7 +99,3 @@ body {
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
-/* *, ::after, ::before {
-  box-sizing: border-box;
-} */
