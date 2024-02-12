@@ -43,7 +43,7 @@ function App() {
       <AnimatedSection>
         <div className="w-full h-auto font-sans">
           <div className='max-w-screen-2xl overflow-hidden'>
-            <Nav />
+            <Nav style={{zIndex:'99999'}} />
             <Home />
             <About />
             <Services />
