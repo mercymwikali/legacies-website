@@ -11,6 +11,8 @@ import Services from './components/Services';
 import Products from './components/Products';
 import ScrollToTopButton from './components/Scrollbtn';
 import Solutions from './components/Solutions';
+import Client from './components/Clients';
+import Partners from './components/Partners';
 
 const AnimatedSection = ({ children }) => {
   const { ref, inView } = useInView();
@@ -43,12 +45,14 @@ function App() {
       <AnimatedSection>
         <div className="w-full h-auto font-sans">
           <div className='max-w-screen-2xl overflow-hidden'>
-            <Nav style={{zIndex:'99999'}} />
+            <Nav  />
             <Home />
             <About />
             <Services />
             <Products />
+            <Client/>
             <Solutions />
+            <Partners/>
             <Contact />
             <ScrollToTopButton />
           </div>
